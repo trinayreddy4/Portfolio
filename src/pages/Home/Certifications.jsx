@@ -10,17 +10,17 @@ const Certifications = () => {
     const [selectedItem,setSelectedItem]= useState(0);
     const data=[{
         certificationsName:"AWS Cloud Practitioner",
-        ImageLink:"https://media.licdn.com/dms/image/D5622AQGE876baw3NwA/feedshare-shrink_800/0/1704022558282?e=1722470400&v=beta&t=xjz3SR8tYsit_09WaN7fiesKbwH5M6BUIEvkFM1CWlU",
+        ImageLink:"https://i.ibb.co/fdfjbhR/1704022558282.jpg",
         Details:"Lorem Lupsum120"
     },
     {
         certificationsName:"Azure AI 900",
-        ImageLink:"https://media.licdn.com/dms/image/D5622AQGCqxtW-HgbFw/feedshare-shrink_2048_1536/0/1717920085362?e=1722470400&v=beta&t=wBkpKz2JJegHsZ-_rtEFKA6b2xaPHciN3uMhaHEnrJQ",
+        ImageLink:"https://i.ibb.co/2F2nVys/1717920085362.jpg",
         Details:"Lorem Lupsum120"
     },
     {
         certificationsName:"Mongo DBA",
-        ImageLink:"https://media.licdn.com/dms/image/D5622AQFOvYN9uI9QIQ/feedshare-shrink_800/0/1716806080305?e=1722470400&v=beta&t=dsgxhMTIhHE2J-pAm0F91_rz29VbLNG09xvoiu3WuY4",
+        ImageLink:"https://i.ibb.co/pwf7rsp/1716806080305.jpg",
         Details:"Lorem Lupsum120"
     },
     {
@@ -30,7 +30,7 @@ const Certifications = () => {
     },
     {
         certificationsName:"Oracle Infrastructure Associate",
-        ImageLink:"https://media.licdn.com/dms/image/D5622AQEkh_XASml7iA/feedshare-shrink_800/0/1702448585286?e=1722470400&v=beta&t=rpwZ6tk7pzio-wYGs5TXLDPz_YugT611V77jt8awQ9U",
+        ImageLink:"https://i.ibb.co/7kTrXn2/1702448585286.jpg",
         Details:"Lorem Lupsum120"
     }
     ]
