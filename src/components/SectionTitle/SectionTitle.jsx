@@ -1,21 +1,12 @@
 import React from 'react'
 
-const SectionTitle = (
-    {title}
-) => {
+const SectionTitle = ({ title, eyebrow, description }) => {
   return (
-    <div
-        className='flex gap-10 items-center py-10 '
-    >
-        <h1
-            className='text-3xl text-white '    
-        >
-            {title}
-        </h1>
-        <div
-            className='w-80 h-[1px] bg-secondary'
-        >
-        </div>
+    <div className="mb-12 flex flex-col gap-3">
+      {eyebrow && <p className="text-xs uppercase tracking-[0.5rem] text-secondary">{eyebrow}</p>}
+      <h2 className="text-4xl font-semibold text-white sm:text-3xl">{title}</h2>
+      {description && <p className="max-w-2xl text-base text-tertiary">{description}</p>}
+      <div className="mt-4 h-[1px] w-24 bg-gradient-to-r from-secondary to-transparent" />
     </div>
   )
 }

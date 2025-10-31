@@ -1,71 +1,97 @@
 import React from 'react'
 import SectionTitle from '../../components/SectionTitle/SectionTitle'
 
+const focusAreas = [
+  {
+    title: 'Full-stack craftsmanship',
+    description:
+      'Designing modular, scalable architectures with the MERN stack, TypeScript and Django to ship fast without compromising quality.',
+  },
+  {
+    title: 'Cloud-native mindset',
+    description:
+      'Certified exposure across AWS, Azure, MongoDB Atlas and Oracle Cloud enables resilient deployments and data-first decisions.',
+  },
+  {
+    title: 'Competitive problem solving',
+    description:
+      '1500+ algorithmic problems solved with a 3★ CodeChef rating and 1566 LeetCode peak keep my analytical edge razor sharp.',
+  },
+]
+
+const journey = [
+  {
+    period: '2022 — Present',
+    title: 'B.Tech CSE (Hons.), KL University',
+    description:
+      'Specialising in computer science fundamentals with a focus on high-impact web engineering and emerging tech exploration.',
+  },
+  {
+    period: '2023 — Present',
+    title: 'Product builder & mentor',
+    description:
+      'Driving university and community initiatives from ideation to launch, mentoring peers on clean architecture and modern tooling.',
+  },
+  {
+    period: '2023',
+    title: 'Competitive programming journey',
+    description: 'Cracked 1500+ DSA problems across CodeChef, Codeforces and LeetCode to nurture disciplined problem solving.',
+  },
+  {
+    period: '2024',
+    title: 'Multi-cloud certified',
+    description: 'Recognised by AWS, Azure, MongoDB, Google Cloud and Oracle for cloud fundamentals, data engineering and infrastructure.',
+  },
+]
+
 const About = () => {
-  const skills=[
-    "JavaScript",
-    "TypeScript",
-    "NextJS",
-    "Node JS",
-    "React",
-    "Django",
-    "Java Full Stack",
-    "AWS",
-    "AZURE",
-    "GCP",
-    "Many More..."
-  ]
   return (
-    <div
-        className='py-11'
-    >
-        <div>
-            <SectionTitle title="About Me"/>
-        </div>
-        <div 
-            className='flex w-full items-center sm:flex-col'
-        >
-            <div
-              className='h-[70vh] sm:h-[50vh] w-1/2 sm:w-full flex items-center sm:flex-col'
-            >
-                <img className="w-100 h-100 sm:w-60 rounded-full" src="https://avatars.githubusercontent.com/u/109901688?v=4" alt="Rounded avatar"/>
-            </div>
-            <div
-              className='flex flex-col gap-5 p-[-5px] sm:w-full text-xl font-medium w-1/2 text-white'
-            >
-              <p >
-              Hey!, I am Trinay Reddy Malireddy , I am Currently Pursing my 3rd year Major in CSE Honors From KL University ,I have Solved more Than 1500+ DSA Problems in Various Platforms. I am having expertise in the field of web development in MERN STACK , Django , JAVA FULLSTACK.
-              I am Currently Learning about the Field of Web3 Dev and Scalable System Designs. I Have done Certifications From AWS ,Azure, Python Institute, MongoDB, GCP. 3 🌟 @CodeChef , 1566 @LeetCode
-              </p>
-              <p>
-              I am very Self motivated Person Who strives very hard to learn new interesting tech stacks that make the field of Computer science progressive and innovative . I Love to Explore new System builds which solve the real World Problems . I am team collabrative person
-              </p>
-            </div>
-        </div>
-        <div
-          className='py-5'
-        >
-          <h1
-              className='text-secondary text-xl py-10'
-          >
-            Here are the few Technologies That I had Worked on
-          </h1>
-          <div
-              className="flex flex-wrap gap-10"
-          >
-            {
-              skills.map((e,i)=>
-              <div 
-                className="border border-white px-3 py-5 rounded "
-                key={i}
-              >
-                <h1 key={i} className='text-white text-lg'>{e}</h1>
-              </div>
-              )
-            }
+    <section id="about" className="py-24">
+      <SectionTitle
+        eyebrow="About"
+        title="Blending engineering discipline with design intuition"
+        description="I obsess over building products that feel intentional—from resilient backend foundations to pixel-perfect user experiences."
+      />
+      <div className="flex items-start gap-12 sm:flex-col">
+        <div className="w-1/2 sm:w-full">
+          <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-10 text-left shadow-xl sm:p-6">
+            <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(102,252,241,0.08),_transparent_60%)]" />
+            <img
+              className="mx-auto h-48 w-48 rounded-full border-4 border-secondary/40 object-cover"
+              src="https://avatars.githubusercontent.com/u/109901688?v=4"
+              alt="Portrait of Trinay Reddy Malireddy"
+            />
+            <p className="mt-10 text-lg text-tertiary">
+              Beyond the stack, I am an articulate communicator and team collaborator who thrives in fast-paced, impact-driven
+              environments. I love architecting delightful interfaces, streamlining developer workflows and ensuring every feature
+              is backed by measurable value.
+            </p>
           </div>
         </div>
-    </div>
+        <div className="flex w-1/2 flex-col gap-10 sm:w-full">
+          <div className="grid grid-cols-1 gap-6">
+            {focusAreas.map((item) => (
+              <div key={item.title} className="rounded-2xl border border-white/10 bg-primary/40 p-6 shadow-lg">
+                <h3 className="text-xl font-semibold text-white">{item.title}</h3>
+                <p className="mt-3 text-base text-tertiary">{item.description}</p>
+              </div>
+            ))}
+          </div>
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+            <h3 className="text-sm uppercase tracking-[0.4rem] text-secondary">Journey</h3>
+            <div className="mt-6 flex flex-col gap-6">
+              {journey.map((milestone) => (
+                <div key={milestone.title} className="border-l border-secondary/40 pl-6">
+                  <p className="text-xs uppercase tracking-[0.3rem] text-secondary/80">{milestone.period}</p>
+                  <h4 className="mt-2 text-lg font-semibold text-white">{milestone.title}</h4>
+                  <p className="mt-2 text-sm text-tertiary">{milestone.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }
 

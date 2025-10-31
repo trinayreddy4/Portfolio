@@ -1,74 +1,76 @@
 import React, { useState } from 'react'
 import SectionTitle from '../../components/SectionTitle/SectionTitle'
 
+const certifications = [
+  {
+    certificationsName: 'AWS Certified Cloud Practitioner',
+    imageLink: 'https://i.ibb.co/fdfjbhR/1704022558282.jpg',
+    details:
+      'Validated foundational knowledge of AWS global infrastructure, IAM, security best practices and cost-optimised architectures.',
+  },
+  {
+    certificationsName: 'Microsoft Azure AI Fundamentals (AI-900)',
+    imageLink: 'https://i.ibb.co/2F2nVys/1717920085362.jpg',
+    details:
+      'Explored responsible AI principles, Azure cognitive services and orchestration of intelligent workloads at scale.',
+  },
+  {
+    certificationsName: 'MongoDB Database Administrator',
+    imageLink: 'https://i.ibb.co/pwf7rsp/1716806080305.jpg',
+    details:
+      'Mastered schema design, performance tuning and operational tooling for mission-critical document databases.',
+  },
+  {
+    certificationsName: 'MongoDB Node.js Developer Associate',
+    imageLink: 'https://i.ibb.co/drdB90d/Screenshot-from-2024-06-26-14-32-26.png',
+    details:
+      'Built resilient Node.js services with aggregation pipelines, Atlas functions and cloud-native deployment strategies.',
+  },
+  {
+    certificationsName: 'Oracle Cloud Infrastructure Foundations',
+    imageLink: 'https://i.ibb.co/7kTrXn2/1702448585286.jpg',
+    details:
+      'Covered OCI compute, networking, storage services and governance models for hybrid enterprise workloads.',
+  },
+]
+
 const Certifications = () => {
-    // {
-    //     CertificationName:,
-    //      Image Link,
-    //      Details
-    // }
-    const [selectedItem,setSelectedItem]= useState(0);
-    const data=[{
-        certificationsName:"AWS Cloud Practitioner",
-        ImageLink:"https://i.ibb.co/fdfjbhR/1704022558282.jpg",
-        Details:"Lorem Lupsum120"
-    },
-    {
-        certificationsName:"Azure AI 900",
-        ImageLink:"https://i.ibb.co/2F2nVys/1717920085362.jpg",
-        Details:"Lorem Lupsum120"
-    },
-    {
-        certificationsName:"Mongo DBA",
-        ImageLink:"https://i.ibb.co/pwf7rsp/1716806080305.jpg",
-        Details:"Lorem Lupsum120"
-    },
-    {
-        certificationsName:"Mongodb node js associate",
-        ImageLink:"https://i.ibb.co/drdB90d/Screenshot-from-2024-06-26-14-32-26.png",
-        Details:"Lorem Lupsum120"
-    },
-    {
-        certificationsName:"Oracle Infrastructure Associate",
-        ImageLink:"https://i.ibb.co/7kTrXn2/1702448585286.jpg",
-        Details:"Lorem Lupsum120"
-    }
-    ]
+  const [selectedItem, setSelectedItem] = useState(0)
+
   return (
-    <div>
-        <SectionTitle title="Certifications"/>
-        <div 
-            className="flex py-10 gap-20 sm:flex-col"
-        >
-            <div 
-                className='flex cursor-pointer flex-col gap-5 border-l-2 border-[#174257d8] sm:flex-row sm:overflow-scroll sm:w-full'
-            >
-                {
-                    data.map((e,i)=>
-                        <div key={i} onClick={()=>setSelectedItem(i)} >
-                            <h1 className={`text-xl px-5 ${selectedItem===i ? "text-secondary border-secondary -ml-[3px] border-l-4 bg-[#1681945e]" :"text-white" } `}>{e.certificationsName}</h1>
-                        </div>
-                )
-                }
-            </div>
-            <div
-                className="flex flex-col gap-5 w-full"
-            >
-                <div
-                    className='w-1/2'
-                >
-                        <h1 className='text-tertiary text-3xl'>{data[selectedItem].certificationsName}</h1>
-                </div>
-                <div
-                    className='flex w-2/3 h-full'
-                >
-                    <div >
-                        <img src={data[selectedItem].ImageLink} alt="Certificate badge" className='flex' />
-                    </div>
-                </div>
-            </div>
+    <section id="credentials" className="py-24">
+      <SectionTitle
+        eyebrow="Credentials"
+        title="Certified across leading cloud and database ecosystems"
+        description="Continuous learning keeps me current with modern tooling so I can bring reliable, future-ready solutions to every engagement."
+      />
+      <div className="flex gap-16 sm:flex-col">
+        <div className="w-1/3 border-l border-white/10 sm:w-full sm:border-l-0 sm:border-t">
+          <ul className="flex flex-col sm:flex-row sm:overflow-x-auto">
+            {certifications.map((item, index) => (
+              <li
+                key={item.certificationsName}
+                className={`cursor-pointer border-b border-white/5 px-6 py-4 text-left text-sm font-semibold uppercase tracking-[0.2rem] sm:border-b-0 sm:border-r ${
+                  selectedItem === index ? 'bg-secondary/10 text-secondary' : 'text-tertiary'
+                }`}
+                onClick={() => setSelectedItem(index)}
+              >
+                {item.certificationsName}
+              </li>
+            ))}
+          </ul>
         </div>
-    </div>
+        <div className="flex w-2/3 flex-col gap-6 rounded-3xl border border-white/10 bg-white/5 p-8 sm:w-full sm:p-6">
+          <img
+            src={certifications[selectedItem].imageLink}
+            alt={certifications[selectedItem].certificationsName}
+            className="h-60 w-full rounded-2xl object-cover"
+          />
+          <h3 className="text-2xl font-semibold text-white">{certifications[selectedItem].certificationsName}</h3>
+          <p className="text-base text-tertiary">{certifications[selectedItem].details}</p>
+        </div>
+      </div>
+    </section>
   )
 }
 
