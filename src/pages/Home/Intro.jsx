@@ -13,7 +13,7 @@ const Intro = () => {
       className="relative flex min-h-[90vh] flex-col justify-center overflow-hidden rounded-3xl bg-gradient-to-br from-[#0b1a1f] via-[#0b0c10] to-[#11232e] px-10 py-32 text-left shadow-2xl sm:px-6 sm:py-24"
     >
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(102,252,241,0.15),_transparent_50%)]" />
-      <p className="text-sm uppercase tracking-[0.6rem] text-secondary">Portfolio 2024</p>
+      <p className="text-sm uppercase tracking-[0.6rem] text-secondary">Portfolio 2025</p>
       <h1 className="mt-6 text-6xl font-semibold text-white sm:text-3xl">
         Hi, I&apos;m <span className="text-secondary">Trinay Reddy Malireddy</span>
       </h1>
@@ -21,8 +21,8 @@ const Intro = () => {
         Full-stack engineer crafting immersive, performant web products that blend delightful UX with resilient architecture.
       </h2>
       <p className="mt-6 max-w-2xl text-lg text-tertiary sm:text-base">
-        A fourth-year B.Tech CSE (Hons.) student at KL University specialising in the MERN stack, TypeScript, Django and Java
-        Full Stack ecosystems. I love translating ambitious ideas into production-ready platforms, while consistently growing
+        A fourth-year B.Tech CSE (Hons.) student at KL University specialising in the MERN stack, TypeScript, Spring Boot and Cloud Native
+        ecosystems. I love translating ambitious ideas into production-ready platforms, while consistently growing
         my problem-solving toolkit through competitive programming.
       </p>
       <div className="mt-10 flex items-center gap-6 sm:flex-col sm:items-start">
@@ -33,7 +33,7 @@ const Intro = () => {
           Let&apos;s collaborate
         </a>
         <a
-          href="https://drive.google.com/file/d/1H2kfPAIqfzirmbtMLH4vLOM0ZkfXAurw/view?usp=sharing"
+          href="https://drive.google.com/file/d/1is3HEF9Eb3ocg5cg35Iq9_nsE2wFfzNy/view?usp=drive_link"
           target="_blank"
           rel="noreferrer"
           className="rounded-full border border-secondary px-10 py-3 text-sm font-semibold uppercase tracking-[0.3rem] text-secondary transition hover:bg-secondary/10"
