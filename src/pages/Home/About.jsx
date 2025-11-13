@@ -5,7 +5,7 @@ const focusAreas = [
   {
     title: 'Full-stack craftsmanship',
     description:
-      'Designing modular, scalable architectures with the MERN stack, TypeScript and Django to ship fast without compromising quality.',
+      'Designing modular, scalable architectures with the Spring Boot and MERN stack to ship fast without compromising quality.',
   },
   {
     title: 'Cloud-native mindset',
