@@ -8,7 +8,7 @@ const skillGroups = [
   },
   {
     title: 'Frameworks & libraries',
-    items: ['React', 'Next.js', 'Redux Toolkit', 'Express.js', 'Django'],
+    items: ['Spring Boot','React', 'Next.js', 'Langchain','Redux Toolkit', 'Express.js'],
   },
   {
     title: 'Databases',
@@ -20,7 +20,7 @@ const skillGroups = [
   },
   {
     title: 'Design & productivity',
-    items: ['Figma', 'Framer', 'Notion', 'Jira'],
+    items: ['N8N Agentic AI','Figma', 'Framer', 'Notion', 'Jira'],
   },
 ]
 
