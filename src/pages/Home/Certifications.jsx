@@ -4,7 +4,8 @@ import SectionTitle from '../../components/SectionTitle/SectionTitle'
 const certifications = [
   {
     certificationsName: 'AWS Certified Solutions Architect – Associate',
-    imageLink: 'https://ibb.co/VcrrfD6t',
+    imageLink:
+      'https://i.ibb.co/ycqP236Q/AWS-Certified-Solutions-Architect-Associate-certificate.jpg',
     details:
       'Demonstrated ability to design resilient, cost-optimised architectures on AWS covering compute, networking, storage and security workloads.',
   },
