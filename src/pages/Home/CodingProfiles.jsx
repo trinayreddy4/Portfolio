@@ -3,24 +3,23 @@ import SectionTitle from '../../components/SectionTitle/SectionTitle'
 
 const projects = [
   {
-    title: 'TrackIt Productivity OS',
+    title: 'Soundsid',
     description:
-      'A personal productivity workspace built with Next.js + TypeScript, featuring modular dashboards, Kanban workflows and analytics-rich insights powered by Node.js microservices.',
-    tech: ['Next.js', 'TypeScript', 'Node.js', 'PostgreSQL'],
-    link: 'https://github.com/trinayreddy4',
+      'Soundsid is a Leading Audio Streaming and Distribution Platform which has nearly 1000+ Clients. Developed using Spring Boot, Lives in AWS',
+    tech: ['Next.js', 'TypeScript', 'Spring Boot', 'MySQL','AWS'],
+    link: 'https://www.soundsid.com',
   },
   {
-    title: 'MediBridge Health Platform',
-    description:
-      'End-to-end telemedicine platform engineered with Django, React and Tailwind CSS enabling appointment management, prescription workflows and role-based access.',
-    tech: ['Django', 'React', 'Tailwind CSS', 'REST APIs'],
+    title: 'KL Samyak',
+    description:'KL Samyak is a National Level Techno Fest which is Organized by KL University. Developed Using Node.js Techstack. Dockerized',
+    tech: ['Node.js', 'React', 'Tailwind CSS', 'REST APIs','Express.js'],
     link: 'https://github.com/trinayreddy4',
   },
   {
     title: 'AlgoPlayground',
     description:
       'Interactive visualiser that demystifies complex data structures & algorithms, incorporating live problem walkthroughs and editor integrations for CodeChef, LeetCode and Codeforces.',
-    tech: ['TypeScript', 'Redux Toolkit', 'Express', 'WebSockets'],
+    tech: ['TypeScript', 'Redux Toolkit', 'Express'],
     link: 'https://github.com/trinayreddy4',
   },
 ]
