@@ -3,10 +3,10 @@ import SectionTitle from '../../components/SectionTitle/SectionTitle'
 
 const certifications = [
   {
-    certificationsName: 'AWS Certified Cloud Practitioner',
-    imageLink: 'https://i.ibb.co/fdfjbhR/1704022558282.jpg',
+    certificationsName: 'AWS Certified Solutions Architect – Associate',
+    imageLink: 'https://ibb.co/VcrrfD6t',
     details:
-      'Validated foundational knowledge of AWS global infrastructure, IAM, security best practices and cost-optimised architectures.',
+      'Demonstrated ability to design resilient, cost-optimised architectures on AWS covering compute, networking, storage and security workloads.',
   },
   {
     certificationsName: 'Microsoft Azure AI Fundamentals (AI-900)',
